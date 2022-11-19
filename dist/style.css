@@ -1,0 +1,232 @@
+:root {
+  --ff-heading: "Poppins", sans-serif;
+  --ff-body: "Open Sans", sans-serif;
+  --color-primary-violet: hsl(257 40% 49%);
+  --color-primary-softMagenta: hsl(300 69% 71%);
+  --color-white: hsl(0 0% 100%);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  min-width: 23.4375rem;
+  margin: 0 auto;
+  background-color: var(--color-primary-violet);
+  font-family: var(--ff-body);
+  background-image: url(../../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  color: var(--color-white);
+  font-weight: 400;
+  padding: calc(1rem + 1.5625vw);
+  display: flex;
+}
+@media (min-width: 56.25em) {
+  body {
+    max-width: 90rem;
+    background-image: url(../../images/bg-desktop.svg);
+    background-size: cover;
+    align-items: center;
+  }
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.semibold {
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+}
+
+.f-right {
+  float: right;
+}
+
+.container {
+  padding-inline: calc(0.5rem + 1.5625vw);
+}
+.container header {
+  padding-top: calc(0.5rem + 1.5625vw);
+  padding-bottom: calc(0.5rem + 1.5625vw);
+}
+.container header img {
+  width: 7.3125rem;
+}
+@media (min-width: 56.25em) {
+  .container header img {
+    width: 12.5rem;
+  }
+}
+.container .hero {
+  padding-top: 3.3125rem;
+  padding-bottom: 3.3125rem;
+}
+@media (min-width: 56.25em) {
+  .container .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.75rem;
+  }
+}
+.container .hero__image {
+  margin-bottom: 3.75rem;
+}
+@media (min-width: 56.25em) {
+  .container .hero__image {
+    width: 43.57875rem;
+    margin-bottom: 0;
+  }
+}
+.container .hero__content {
+  text-align: center;
+}
+@media (min-width: 56.25em) {
+  .container .hero__content {
+    text-align: left;
+    width: 32rem;
+    margin-top: 3.0625rem;
+  }
+}
+.container .hero__content h1 {
+  font-family: var(--ff-heading);
+  font-size: 1.5rem;
+  letter-spacing: -0.0625rem;
+  margin-bottom: 1.75rem;
+}
+@media (min-width: 56.25em) {
+  .container .hero__content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+.container .hero__content p {
+  font-size: 1rem;
+  line-height: 150%;
+  opacity: 0.8;
+  margin-bottom: 1.5625rem;
+}
+@media (min-width: 56.25em) {
+  .container .hero__content p {
+    font-size: 1.125rem;
+    margin-bottom: 1.6875rem;
+  }
+}
+.container .hero__content a {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  color: var(--color-primary-violet);
+  width: 12.5rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+  padding: 1rem 4.8125rem;
+  border-radius: 3.125rem;
+  border: 0;
+  box-shadow: 0 0.25rem 0.5rem 0.125rem hsla(0deg, 0%, 0%, 0.3);
+  letter-spacing: 0.0625rem;
+}
+@media (min-width: 56.25em) {
+  .container .hero__content a {
+    margin: 0;
+  }
+}
+.container .hero__content a:hover {
+  background-color: var(--color-primary-softMagenta);
+  color: white;
+}
+.container .social {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 56.25em) {
+  .container .social {
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+}
+.container .social__icon a {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  margin: 0 auto;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+}
+@media (min-width: 56.25em) {
+  .container .social__icon a {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+.container .social__icon a:hover {
+  border-color: var(--color-primary-softMagenta);
+  color: var(--color-primary-softMagenta);
+}/*# sourceMappingURL=style.css.map */

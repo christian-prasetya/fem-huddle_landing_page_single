@@ -1,0 +1,23 @@
+:root {
+  // font stack
+  --ff-heading: 'Poppins', sans-serif; // 400 & 600 (semibold)
+  --ff-body: 'Open Sans', sans-serif; // 400
+
+  // Base Color
+  // primary color
+  --color-primary-violet: hsl(257 40% 49%);
+  --color-primary-softMagenta: hsl(300 69% 71%);
+
+  // neutral color
+  --color-white: hsl(0 0% 100%);
+}
+
+$bg-primary: var(--color-primary-violet);
+$color-primary: var(--color-white);
+$color-active: var(--color-primary-softMagenta);
+
+$font-heading: var(--ff-heading);
+$font-body: var(--ff-body);
+
+$fw-reg: 400;
+$fw-semibold: 600;
