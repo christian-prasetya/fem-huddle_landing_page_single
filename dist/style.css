@@ -43,7 +43,7 @@ body {
   margin: 0 auto;
   background-color: var(--color-primary-violet);
   font-family: var(--ff-body);
-  background-image: url(images/bg-mobile.svg);
+  background-image: url(/images/bg-mobile.svg);
   background-repeat: no-repeat;
   color: var(--color-white);
   font-weight: 400;
