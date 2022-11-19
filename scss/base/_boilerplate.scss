@@ -38,7 +38,7 @@ body {
   margin: 0 auto;
   background-color: v.$bg-primary;
   font-family: v.$font-body;
-  background-image: url(./images/bg-mobile.svg);
+  background-image: url(images/bg-mobile.svg);
   background-repeat: no-repeat;
   color: v.$color-primary;
   font-weight: v.$fw-reg;
@@ -47,7 +47,7 @@ body {
 
   @include u.breakpoint(large) {
     max-width: u.rem(1440);
-    background-image: url(../../images/bg-desktop.svg);
+    background-image: url(images/bg-desktop.svg);
     background-size: cover;
     align-items: center;
   }
